@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react_expo_Project",
+    "slug": "react_expo_Project",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react_expo_Project"
+}
