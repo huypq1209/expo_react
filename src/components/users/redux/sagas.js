@@ -4,7 +4,7 @@ import actions from './actions'
 import instance from '../../../utilities/axios'
 
 const endpoint = '/users';
-function* login(params){
+function* signIn(params){
     const data=yield call(instance.request,{
         url:'${endpoint}/signIn',
         method:'POST',

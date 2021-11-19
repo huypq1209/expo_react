@@ -1,19 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import store from './src/redux/stores';
+import { Provider } from 'react-redux';
+import Welcome from './src/components/users/Welcome';
 
-const App=()=> {
-  const hello='Xin chào'
-  let text="A  Huy"
-  console.log(hello +" Bạn  w"+ text)
-  return (
-    <View style={styles.container}>
-      <Text>{hello} {text} 1234 </Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+export default function App(){
+  return(
+    <Provider store={store}>
+      <Welcome/>
+    </Provider>
+  )
 }
-export default App
 const styles = StyleSheet.create({
   container: {
     flex: 1,
